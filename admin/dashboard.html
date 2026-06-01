@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админ-панель — BAcademy</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <header class="admin-header">
+    <div class="container">
+      <div class="admin-header__inner">
+        <span class="logo">BAcademy</span>
+        <nav class="admin-nav">
+          <button class="admin-tab active" data-tab="registrations">Заявки</button>
+          <button class="admin-tab" data-tab="courses">Курсы</button>
+          <button id="logout-btn" class="btn logout-btn">Выйти</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="tab-registrations" class="admin-tab-content active">
+      <h2>Заявки на курсы</h2>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Имя</th>
+            <th>Телефон</th>
+            <th>Email</th>
+            <th>Дата</th>
+            <th>Статус</th>
+            <th>Создано</th>
+          </tr>
+        </thead>
+        <tbody id="registrations-body"></tbody>
+      </table>
+    </section>
+
+    <section id="tab-courses" class="admin-tab-content">
+      <div class="admin-section-header">
+        <h2>Курсы</h2>
+        <button id="add-course-btn" class="btn btn--primary">+ Добавить курс</button>
+      </div>
+      <div id="courses-list"></div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="course-modal">
+    <div class="modal">
+      <h3 id="modal-title">Новый курс</h3>
+      <form id="course-form">
+        <input type="hidden" name="id">
+        <label>Название <input type="text" name="title" required></label>
+        <label>Описание <textarea name="description" rows="3" required></textarea></label>
+        <label>Длительность <input type="text" name="duration" required></label>
+        <label>Формат <input type="text" name="format" required></label>
+        <label>Цена <input type="number" name="price" required></label>
+        <label>Старая цена <input type="number" name="old_price"></label>
+        <div class="modal-actions">
+          <button type="button" class="btn" id="modal-cancel">Отмена</button>
+          <button type="submit" class="btn btn--primary">Сохранить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

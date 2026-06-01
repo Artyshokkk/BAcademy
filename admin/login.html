@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход — BAcademy Admin</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <div class="login-page">
+    <div class="login-card">
+      <a href="../index.html" class="logo">BAcademy</a>
+      <h1>Вход в админку</h1>
+      <form id="login-form">
+        <label>
+          Email
+          <input type="email" name="email" placeholder="admin@bacademy.ru" required>
+        </label>
+        <label>
+          Пароль
+          <input type="password" name="password" placeholder="********" required>
+        </label>
+        <p class="login-error" id="login-error"></p>
+        <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Войти</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
