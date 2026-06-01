@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAcademy — Курсы бизнес-анализа</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo">BAcademy</a>
+        <nav class="nav">
+          <a href="index.html" class="nav__link nav__link--active">Курсы</a>
+          <a href="#about" class="nav__link">О нас</a>
+          <a href="#contacts" class="nav__link">Контакты</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__badge">Старт ближайшей группы — 15 июня</span>
+        <h1>Станьте бизнес-аналитиком<br>с&nbsp;навыками работы с&nbsp;AI</h1>
+        <p class="hero__text">Практический курс от экспертов рынка. Освойте инструменты бизнес-анализа и научитесь применять AI-агентов для реальных задач. С нуля до уверенного Junior.</p>
+        <a href="course.html" class="btn btn--primary">Записаться на курс</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">Почему мы?</h2>
+      <div class="about__grid">
+        <div class="about__card">
+          <div class="about__icon">🎯</div>
+          <h3>Практика с первого дня</h3>
+          <p>Реальные кейсы от действующих Senior-аналитиков. 70% времени — практические задания.</p>
+        </div>
+        <div class="about__card">
+          <div class="about__icon">🤖</div>
+          <h3>AI-агенты в работе</h3>
+          <p>Научитесь использовать ИИ для анализа требований, документирования и автоматизации рутины.</p>
+        </div>
+        <div class="about__card">
+          <div class="about__icon">📈</div>
+          <h3>Помощь с трудоустройством</h3>
+          <p>Ревью резюме, подготовка к собеседованиям и контакты компаний-партнёров.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses">
+    <div class="container">
+      <h2 class="section-title">Наши курсы</h2>
+      <div class="courses__grid">
+        <a href="course.html" class="course-card">
+          <div class="course-card__tag">Старт 15 июня</div>
+          <h3 class="course-card__title">Бизнес-анализ: от базы до работы с&nbsp;AI-агентами</h3>
+          <p class="course-card__desc">Полный курс для начинающих: методологии, артефакты, инструменты и интеграция AI в ежедневную работу аналитика.</p>
+          <div class="course-card__meta">
+            <span>3 месяца</span>
+            <span>2 раза в неделю</span>
+            <span>Онлайн</span>
+          </div>
+          <div class="course-card__footer">
+            <span class="course-card__price">49 000 ₽</span>
+            <span class="course-card__cta">Подробнее →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <div class="container">
+      <h2 class="section-title">Как проходит обучение</h2>
+      <div class="how__steps">
+        <div class="how__step">
+          <span class="how__num">01</span>
+          <h3>Вебинары в прямом эфире</h3>
+          <p>Занятия 2 раза в неделю с возможностью задать вопрос преподавателю.</p>
+        </div>
+        <div class="how__step">
+          <span class="how__num">02</span>
+          <h3>Домашние задания</h3>
+          <p>После каждого модуля — практическое задание с проверкой и обратной связью.</p>
+        </div>
+        <div class="how__step">
+          <span class="how__num">03</span>
+          <h3>Финальный проект</h3>
+          <p>Разработка полного пакета документации для реального или учебного проекта.</p>
+        </div>
+        <div class="how__step">
+          <span class="how__num">04</span>
+          <h3>Диплом и поддержка</h3>
+          <p>Сертификат о прохождении и помощь с трудоустройством после выпуска.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <h2 class="section-title">Свяжитесь с нами</h2>
+      <div class="contacts__inner">
+        <div class="contacts__info">
+          <p>Email: <a href="mailto:hello@bacademy.ru">hello@bacademy.ru</a></p>
+          <p>Telegram: <a href="#">@bacademy</a></p>
+          <p>Или оставьте заявку — мы перезвоним в течение дня</p>
+        </div>
+        <form class="contacts__form" id="contact-form">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+          <input type="email" name="email" placeholder="Email">
+          <button type="submit" class="btn btn--primary">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="logo">BAcademy</span>
+        <p class="footer__copy">© 2026 BAcademy. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
